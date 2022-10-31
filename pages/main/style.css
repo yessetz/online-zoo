@@ -1,0 +1,129 @@
+body {
+    max-width: 1600px;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin: auto;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 1160px;
+}
+
+ul {
+    list-style: none;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+li {
+    display: inline;
+}
+
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: #FFFFFF;
+}
+a:visited {
+    color: #FFFFFF;
+}
+a:hover {
+    color: #E47209;
+    transition: 0.2s;
+}
+a:active {
+    color: #F9804B;
+}
+
+
+/* Header navigation menu bar ----------------------------------------------- */
+.menu-bar {
+    background: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    z-index: 100;
+}
+.menu-bar-flexbox {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 5px;
+}
+.nav-inline {
+    display: inline;
+}
+.nav-inline li {
+    padding-left: 58px;
+}
+.header-rights {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+/* Header section ----------------------------------------------- */
+.header-background {
+    background-image: url("../../assets/images/jpeg/Giant-Panda.jpg");
+    height: 780px;
+}
+.header-container {
+    margin-top: 86px;
+    margin-left: auto;
+    margin-right: 220px;
+    max-width: 500px;
+}
+.header-circle {
+    border-radius: 50%;
+    background-color: #F9804B;
+    width: 465px;
+    height: 465px;
+}
+
+.title-content {
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.title-selection {
+    color: #FFEE2E;
+}
+
+.button-watch {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.button-watch-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px 0 16px 0;
+    background-color: #F9804B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    width: 300px
+}
+.button-watch-text:hover {
+    background-color: #E47209;
+    transition: 0.2s;
+}
