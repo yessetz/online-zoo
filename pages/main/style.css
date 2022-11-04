@@ -127,3 +127,130 @@ a:active {
     background-color: #E47209;
     transition: 0.2s;
 }
+
+/* Backstage section ----------------------------------------------- */
+.backstage-section {
+    background-image: url("../../assets/images/jpeg/flower_backstage.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.backstage-content {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.backstage-content-text {
+    padding-left: 87px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: #333B41;
+}
+.backstage-title {
+    font-size: 48px;
+    line-height: 120%;
+    padding-bottom: 20px;
+}
+.backstage-description {
+    font-size: 16px;
+    line-height: 130%;
+    padding-bottom: 54px;
+}
+.backstage-sub-title {
+    font-size: 24px;
+    line-height: 120%;
+    padding-bottom: 34px;
+}
+.backstage-sub-description {
+    font-size: 16px;
+    line-height: 140%;
+}
+
+/* Cards section ----------------------------------------------- */
+.cards-section {
+    margin-top: 80px;
+}
+.cards-background {
+    background-image: url("../../assets/images/jpeg/palm.jpg"), url("../../assets/images/jpeg/plant.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right bottom;
+    padding-bottom: 100px;
+}
+.cards-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1322px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-cards {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 30px;
+    grid-row-gap: 20px; 
+}
+.card {
+    border: 1px solid #FA6F32;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+.card-container {
+    padding: 8px 14px 14px 16px;
+}
+.card-container > h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+}
+.card-container > p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #000000;
+}
+.card-container:hover {
+    transition: .5;
+    box-shadow: #E47209;
+}
+.arrow-block {
+    background-color: #F9804B;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.arrow-block:hover {
+    transition: .5;
+    box-shadow: #E47209;
+}
+.arrow-sign {
+    width: 40%;
+}
+.button-cards {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.button-cards-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px 0 16px 0;
+    background-color: #F9804B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    width: 300px
+}
