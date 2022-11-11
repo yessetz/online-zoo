@@ -1,0 +1,619 @@
+body {
+    max-width: 1600px;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin: auto;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 1160px;
+}
+
+ul {
+    list-style: none;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+li {
+    display: inline;
+}
+
+
+a {
+    text-decoration: none;
+}
+a:link {
+    color: #FFFFFF;
+}
+a:visited {
+    color: #FFFFFF;
+}
+a:hover {
+    color: #E47209;
+    transition: 0.2s;
+}
+a:active {
+    color: #F9804B;
+}
+
+
+/* Header navigation menu bar ----------------------------------------------- */
+.menu-bar {
+    background: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    z-index: 100;
+}
+.menu-bar-flexbox {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 5px;
+}
+
+#donate {
+    color: #F9804B;
+}
+
+.nav-inline {
+    display: inline;
+}
+.nav-inline li {
+    padding-left: 58px;
+}
+.header-rights {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+/* Header section ----------------------------------------------- */
+.header-background {
+    background-image: url("../../assets/images/jpeg/Giant-Panda.jpg");
+    background-position: center;
+    background-size: inherit;
+    height: 390px;
+    overflow: hidden;
+}
+.header-container {
+    margin-top: 86px;
+    margin-left: auto;
+    margin-right: 220px;
+    max-width: 500px;
+}
+.header-circle {
+    border-radius: 50%;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    width: 465px;
+    height: 465px;
+}
+
+.title-content {
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.title-selection {
+    color: #FFEE2E;
+}
+
+.button-watch {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.button-watch-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px 0 16px 0;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    width: 300px
+}
+.button-watch-text:hover {
+    background: #E47209;
+    cursor: pointer;
+}
+
+/* Footer section ----------------------------------------------- */
+.footer-background {
+    background: #111115;
+}
+footer {
+    background: #111115;
+    padding: 40px 0 50px;
+}
+  
+footer .footer_top {
+display: flex;
+justify-content: space-between;
+}
+
+.footer_top form label {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.footer_top form #email {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    background: #111115;
+    color: #BDBDBD;
+    padding: 10px;
+    margin-top: 14px;
+    border: 1px solid #F9804B;
+}
+
+.footer_top input[type="submit"] {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px 39px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.footer_top input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #F1F3F2;
+    border-color: #4B9200;
+}
+
+footer h2 {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 22.8px;
+    text-align: center;
+    border: 1.19px solid rgba(255, 255, 255, 0.25);
+    width: 82px;
+    height: 52px;
+    position: relative;
+    padding: 3.5px 4.75px;
+}
+
+footer h2 a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer-logo {
+    position: absolute;
+    top: 23.9px;
+    left: 9px;
+}
+
+footer .footer_donate {
+    margin: 68px 0 44px;
+    padding: 16px 0;
+    width: 298px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    color: #FFF;
+    border: transparent;
+}
+footer .footer_donate:hover {
+    background: #E47209;
+    cursor: pointer;
+}
+
+footer .footer_donate:active {
+    background: #4B9200;
+}
+
+footer .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .socials a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer .socials a h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+footer .socials_logo {
+    width: 26px;
+    height: 26px;
+    background: rgba(196, 196, 196, 0.5);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+footer .socials a:hover {
+    color: #4B9200;
+}
+
+footer .socials a:hover .socials_logo {
+    background-color: #4B9200;
+}
+
+footer .footer_bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+footer .footer_bottom nav ul {
+    display: flex;
+    gap: 58px;
+}
+
+footer .footer_bottom nav ul li a{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+footer .footer_bottom .copyright h4 {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 21px;
+    color: #FFF;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li a:hover {
+    color: #F9804B;
+}
+
+.donation-section {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.donation-title {
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.donation-desc {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.donation-sub-title {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #FE9013;
+}
+.donation-menu {
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    margin: auto;
+}
+.donation-menu-container {
+    padding: 40px 92px 62px 92px;
+}
+.donation-container {
+    padding-bottom: 180px;
+}
+.donation-menu-header {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+}
+.donation-menu-desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+}
+.donation-menu-diet-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donation-menu-diet-info-desc > .number {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.donation-menu-diet-info-desc > .desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+}
+.donation-menu-diet-info-icon {
+    padding-left: 11px;
+}
+.donation-menu-diet-info-img {
+    padding-left: 64px;
+}
+.donation-menu-amount {
+    margin-top: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.donation-menu-line {
+    height: 3px;
+    width: 93%;
+    margin: 11px 0 0 25px;
+    background-color:#72828E;
+}
+.donation-menu-scroll-container {
+    margin-top: 17px;
+    position: relative;
+    height: 27px;
+    border: 1px solid #404950;
+    background-color: #404950;
+    border-radius: 2px;
+}
+
+.donation-menu-scroll-money-container {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    margin-left: 25px;
+    width: 93%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.donation-menu-scroll-class {
+    position: relative;
+    margin: 10px 0 0 0;
+    height: 10px;
+    width: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.donation-menu-scroll-class input {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    border-radius: 10px;
+    outline: 2px solid pink;
+    width: 80px;
+    height: 88px;
+}
+.donation-menu-scroll-money-amount {
+    visibility: visible;
+    position: absolute;
+    top: 38px;
+    left: -20px;
+    width: 72px;
+    height: 36px;
+    display: flex;
+}
+.currency-symbol {
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #333B41;
+}
+.money_amount {
+    width: 60px;
+    height: 36px;
+    font-size: 26px;
+}
+.donation-menu-scroll-class input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: 2px solid pink;
+    border: solid red 1px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.donation-menu-scroll-class input[type="radio"]:checked + #circle-shape {
+    visibility: visible;
+    color: #FE9013;
+}
+.donation-menu-scroll-class input[type="radio"]:hover + #circle-shape {
+    visibility: visible;
+    color: #FE9013;
+}
+.donation-menu-scroll-class:hover {
+    color: silver;
+    cursor: pointer;
+}
+
+.circle-container {
+    width: 200px;
+    margin: 0  20px 200px 300px ;
+    border: solid red 1px;
+}
+#circle-shape {
+    color:#333B41;
+    visibility: hidden;
+    background: transparent;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 50%;
+    right: 50%;
+}
+
+#inner__circle {
+    position: absolute;
+    background: transparent;
+    border: 2px solid #F9804B;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    top: 50%;
+    left: 50%;
+    margin: -18px 0px 0px -18px;
+}
+
+#inner__circle-sec {
+    position: absolute;
+    background: transparent;
+    border: 2px solid #F9804B;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0px 0px -10px;
+}
+
+#inner__circle-third{
+    position: absolute;
+    background: transparent;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0px 0px -5px;
+    background-color: yellow;
+}
+.input-money {
+    margin-top: 92px;
+    display: flex;
+    justify-content: center;
+}
+#input-money {
+    width: 268px;
+    height: 54px;
+    left: 354px;
+    top: 625px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #929699;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    background-color:rgba(0, 0, 0, 0.0);
+    padding-left: 9px;
+}
+
+.monthly {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    padding-right: 15px;
+}
+
+.monthly input[type="radio"] {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    border: solid 1px var(--color-orange2);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #F9804B;
+}
+
+.monthly input[type="radio"]:checked {
+    background-color: #F9804B;
+}
+
+.monthly label {
+    display: flex;
+    align-items: center;
+    line-height: 140%;
+    color: var(--color-black-blue);
+}
+.feed-button-block {
+    margin-top: 31px;
+    display: flex;
+    justify-content: center;
+}
+.feed-button {
+    padding: 16px 0;
+    width: 298px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    color: #FFF;
+    border: transparent;
+    text-transform: uppercase;
+}
+.feed-button:hover {
+    background: #E47209;
+    cursor: pointer;
+}
+.feed-button:active {
+    background: #4B9200;
+}
+.feed-note {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
