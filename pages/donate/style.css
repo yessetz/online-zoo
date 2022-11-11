@@ -63,7 +63,7 @@ a:active {
     padding-right: 5px;
 }
 
-#about {
+#donate {
     color: #F9804B;
 }
 
@@ -82,7 +82,10 @@ a:active {
 /* Header section ----------------------------------------------- */
 .header-background {
     background-image: url("../../assets/images/jpeg/Giant-Panda.jpg");
-    height: 780px;
+    background-position: center;
+    background-size: inherit;
+    height: 390px;
+    overflow: hidden;
 }
 .header-container {
     margin-top: 86px;
@@ -140,7 +143,6 @@ a:active {
 footer {
     background: #111115;
     padding: 40px 0 50px;
-    margin-top: 180px;
 }
   
 footer .footer_top {
@@ -167,7 +169,7 @@ justify-content: space-between;
 }
 
 .footer_top input[type="submit"] {
-    color: #4B9200;
+    color: #000000;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -239,7 +241,7 @@ footer .socials a {
     align-items: center;
     gap: 12px;
     text-decoration: none;
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 footer .socials a h5 {
@@ -300,6 +302,318 @@ footer nav ul li a:hover {
     color: #F9804B;
 }
 
-footer nav ul li:first-child a {
-    color: #F9804B;
+.donation-section {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.donation-title {
+    padding-top: 40px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.donation-desc {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.donation-sub-title {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #FE9013;
+}
+.donation-menu {
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    margin: auto;
+}
+.donation-menu-container {
+    padding: 40px 92px 62px 92px;
+}
+.donation-container {
+    padding-bottom: 180px;
+}
+.donation-menu-header {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+}
+.donation-menu-desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+}
+.donation-menu-diet-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donation-menu-diet-info-desc > .number {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.donation-menu-diet-info-desc > .desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+}
+.donation-menu-diet-info-icon {
+    padding-left: 11px;
+}
+.donation-menu-diet-info-img {
+    padding-left: 64px;
+}
+.donation-menu-amount {
+    margin-top: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.donation-menu-line {
+    height: 3px;
+    width: 93%;
+    margin: 11px 0 0 25px;
+    background-color:#72828E;
+}
+.donation-menu-scroll-container {
+    margin-top: 17px;
+    position: relative;
+    height: 27px;
+    border: 1px solid #404950;
+    background-color: #404950;
+    border-radius: 2px;
+}
+
+.donation-menu-scroll-money-container {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    margin-left: 25px;
+    width: 93%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.donation-menu-scroll-class {
+    position: relative;
+    margin: 10px 0 0 0;
+    height: 10px;
+    width: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.donation-menu-scroll-class input {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    border-radius: 10px;
+    outline: 2px solid pink;
+    width: 80px;
+    height: 88px;
+}
+.donation-menu-scroll-money-amount {
+    visibility: visible;
+    position: absolute;
+    top: 38px;
+    left: -20px;
+    width: 72px;
+    height: 36px;
+    display: flex;
+}
+.currency-symbol {
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #333B41;
+}
+.money_amount {
+    width: 60px;
+    height: 36px;
+    font-size: 26px;
+}
+.donation-menu-scroll-class input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: 2px solid pink;
+    border: solid red 1px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.donation-menu-scroll-class input[type="radio"]:checked + #circle-shape {
+    visibility: visible;
+    color: #FE9013;
+}
+.donation-menu-scroll-class input[type="radio"]:hover + #circle-shape {
+    visibility: visible;
+    color: #FE9013;
+}
+.donation-menu-scroll-class:hover {
+    color: silver;
+    cursor: pointer;
+}
+
+.circle-container {
+    width: 200px;
+    margin: 0  20px 200px 300px ;
+    border: solid red 1px;
+}
+#circle-shape {
+    color:#333B41;
+    visibility: hidden;
+    background: transparent;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    bottom: 50%;
+    right: 50%;
+}
+
+#inner__circle {
+    position: absolute;
+    background: transparent;
+    border: 2px solid #F9804B;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    top: 50%;
+    left: 50%;
+    margin: -18px 0px 0px -18px;
+}
+
+#inner__circle-sec {
+    position: absolute;
+    background: transparent;
+    border: 2px solid #F9804B;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0px 0px -10px;
+}
+
+#inner__circle-third{
+    position: absolute;
+    background: transparent;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0px 0px -5px;
+    background-color: yellow;
+}
+.input-money {
+    margin-top: 92px;
+    display: flex;
+    justify-content: center;
+}
+#input-money {
+    width: 268px;
+    height: 54px;
+    left: 354px;
+    top: 625px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #929699;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    background-color:rgba(0, 0, 0, 0.0);
+    padding-left: 9px;
+}
+
+.monthly {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    padding-right: 15px;
+}
+
+.monthly input[type="radio"] {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    border: solid 1px var(--color-orange2);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #F9804B;
+}
+
+.monthly input[type="radio"]:checked {
+    background-color: #F9804B;
+}
+
+.monthly label {
+    display: flex;
+    align-items: center;
+    line-height: 140%;
+    color: var(--color-black-blue);
+}
+.feed-button-block {
+    margin-top: 31px;
+    display: flex;
+    justify-content: center;
+}
+.feed-button {
+    padding: 16px 0;
+    width: 298px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    color: #FFF;
+    border: transparent;
+    text-transform: uppercase;
+}
+.feed-button:hover {
+    background: #E47209;
+    cursor: pointer;
+}
+.feed-button:active {
+    background: #4B9200;
+}
+.feed-note {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
